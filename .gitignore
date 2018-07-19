@@ -1,0 +1,16 @@
+*.class
+
+#package file
+*.war
+*.ear
+
+# maven ignore
+target/
+
+#eclipse ingnore
+.settings/
+.project
+.classpath
+
+*.log
+*.cache
