@@ -7,7 +7,6 @@ import com.peak.xgen.conf.model.ModuleGenConfModel;
 
 public interface IGenConf {
 	
-	
 	public GenConfModel getGenConfModel();
 	
 	public Map<String, ModuleGenConfModel> getModuleMap();
