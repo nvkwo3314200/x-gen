@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.sun.xml.internal.ws.util.StringUtils;
+
 public class GenConfModel {
 	
 	private List<NeedGenModel> needGenModelList = new ArrayList<NeedGenModel>();
@@ -37,5 +39,11 @@ public class GenConfModel {
 		this.constantMap = constantMap;
 	}
 	
-	
+	public ThemeModel getThemeById(String id) {
+		if(id == null || "".equals(id)) return new ThemeModel();
+		for(ThemeModel item : this.themeModelList) {
+			if(id.equals(item.getId())) return item;
+		}
+		return new ThemeModel();
+	}
 }

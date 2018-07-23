@@ -10,7 +10,7 @@ public interface GenConfImplementor {
 	
 	public  List<NeedGenModel> getNeedGenModelList();
 	
-	public List<ThemeModel> getThemeMOdelList();
+	public List<ThemeModel> getThemeModelList();
 	
 	public Map<String, String> getConstantMap();
 }

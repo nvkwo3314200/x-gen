@@ -6,6 +6,7 @@ import java.util.Map;
 public class NeedGenModel {
 	private String id;
 	private String provider;
+	private String themeId;
 	private Map<String, String> paramMap = new HashMap<>();
 	
 	public String getId() {
@@ -26,4 +27,11 @@ public class NeedGenModel {
 	public void setParamMap(Map<String, String> paramMap) {
 		this.paramMap = paramMap;
 	}
+	public String getThemeId() {
+		return themeId;
+	}
+	public void setThemeId(String themeId) {
+		this.themeId = themeId;
+	}
+	
 }
